@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ứng dụng hỏi tên</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		//tạo ra các khối xử lý
+		function xin_chao( ten ){
+			//xử lý, kết hợp với câu xin chào
+			//lấy ten ở bộ nhớ ra, và gán lại cho nó giá trị mới
+			ten = 'Xin chào ' + ten;
+			document.write( ten );
+		}
+
+		//lấy giá trị nhập vào + lưu vào bộ nhớ với tên gọi là ten
+		ten = prompt('Tên bạn là gì ?');
+		
+		//xuất ra
+		xin_chao( ten );
+
+	</script>
+</body>
+</html>
