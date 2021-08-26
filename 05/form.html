@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Form</title>
+</head>
+<body>
+
+	<div id="ket_qua"></div>
+
+	<form>
+		Ho
+		<input type="text" name="ho" id="ho" value="">
+		<br>
+
+		Ten
+		<input type="text" name="ten" id="ten" value="">
+		<br>
+
+		Giới tính
+		<select name="gender" id="gender">
+			<option value="nu">Nữ</option>
+			<option value="nam">Nam</option>
+		</select>
+		<br>
+		<input type="button" value="Xử lý" onclick="khoi_xu_ly()">
+	</form>
+
+	<script type="text/javascript">
+		function khoi_xu_ly(){
+			let input_ho = document.getElementById('ho');
+			let ho = input_ho.value;
+
+			let ten = document.getElementById('ten').value;
+
+			let gender = document.getElementById('gender').value;
+
+			let noi_dung 	= ' <br> Họ: ' + ho;
+			noi_dung 		+= ' <br> Tên: ' + ten;
+			noi_dung 		+= ' <br> Giới tính: ' + gender;
+
+			let ket_qua = document.getElementById('ket_qua');
+			//ket_qua.innerText = noi_dung;
+			ket_qua.innerHTML = noi_dung;
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Chuyển đổi</title>
+</head>
+<body>
+
+    Số A <input type="text" id="so_a" value=""> <br>
+    Số B <input type="text" id="so_b" value=""> <br>
+
+    <input type="button" id="xu_ly" value="Xử lý" onclick="khoi_xu_ly();" >
+
+	<script>
+		function khoi_xu_ly(){
+			let so_a = document.getElementById('so_a').value;
+			let so_b = document.getElementById('so_b').value;
+
+            //cách chuyển đổi từ string sang number
+            
+            //cách 1
+            so_a = parseInt( so_a );
+            so_b = parseInt( so_b );
+
+            //cách 2
+            so_a = so_a * 1;
+            so_b = so_b * 1;
+
+            //cách 3
+            so_a = Number( so_a );
+            so_b = Number( so_b );
+
+
+			console.log( typeof so_a );//string
+			console.log( typeof so_b );//string
+
+			let so_c = so_a + so_b;//12
+
+
+
+			console.log(so_a);
+			console.log(so_b);
+			console.log(so_c);
+		}
+	</script>
+
+</body>
+</html>
