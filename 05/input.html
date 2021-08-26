@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cách xử lý form javascript</title>
+</head>
+<body>
+
+	<form action="" method="">
+		<!-- Đặt 1 input có thuộc tính id là name -->
+		<input type="text" name="name" id="name">
+
+		<!-- Đặt 1 input có thuộc tính id là password -->
+		<input type="password" name="password" id="password">
+
+		<!-- Đặt 1 thẻ select có thuộc tính id là gender -->
+		<select id="gender">
+			<option value="male">Nam</option>
+			<option value="female">Nữ</option>
+		</select>
+
+		<!-- Đặt 1 button có id là xử lý -->
+		<input type="button" value="Xử lý" id="xu_ly" onclick="khoi_xu_ly();">
+	</form>
+
+
+
+
+	<script type="text/javascript">
+		function khoi_xu_ly(){
+			// tìm tới ô input có id = name
+			let input_name = document.getElementById('name');
+			//lấy giá trị của ô input đó
+			let input_name_value = input_name.value;
+
+			console.log(input_name_value);
+
+			//tìm tới ô input có id là password
+			let input_password = document.getElementById('password');
+			//lấy giá trị của ô input đó
+			let input_password_value = input_password.value;
+
+			console.log(input_password_value);
+
+			// tìm tới ô select có id = gender
+			let input_gender = document.getElementById('gender');
+			//lấy giá trị của ô input đó
+			let input_gender_value = input_gender.value;
+
+			console.log(input_gender_value);
+
+		}
+	</script>
+</body>
+</html>
