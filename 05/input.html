@@ -6,6 +6,8 @@
 </head>
 <body>
 
+	<div id="ket_qua"></div>
+
 	<form action="" method="">
 		<!-- Đặt 1 input có thuộc tính id là name -->
 		<input type="text" name="name" id="name">
@@ -48,6 +50,14 @@
 			let input_gender_value = input_gender.value;
 
 			console.log(input_gender_value);
+
+			let noi_dung = ' Tên: ' + input_name_value;
+			noi_dung += '<br> Mật Khẩu: ' + input_password_value;
+			noi_dung += '<br> Giới Tính: ' + input_gender_value;
+
+			//tìm tới thẻ có id là ket_qua và đưa vào mã html
+			document.getElementById('ket_qua').innerHTML = noi_dung;
+
 
 		}
 	</script>
