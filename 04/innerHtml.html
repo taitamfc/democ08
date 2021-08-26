@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>InnerHtml</title>
+</head>
+<body>
+	<div id="messageDiv">
+		123
+	</div>
+
+	<button type="button" onclick=" showMessage(); ">CLick me</button>
+
+	<script type="text/javascript">
+		function showMessage(){
+			//tìm toàn bộ tài liệu html có chứa thuộc tính id = x
+			//đưa vào nội dung bên trong thẻ có thuộc tính id = messageDiv
+			//document.getElementById('messageDiv').innerHTML = 'Xin chào';
+
+			//thay thế toàn bộ tài liệu html hiện tại
+			//document.write('Hello');
+
+			//hiển thị đầu ra ở tab console
+			console.log('Hello')
+		}
+	</script>
+</body>
+</html>

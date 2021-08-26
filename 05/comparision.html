@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		let a = 5;
+		let b = '5';
+
+		//so sánh cùng giá trị
+		if( a == b ){
+			console.log(' a == b: đúng ');
+		}else{
+			console.log(' a == b: sai ');
+		}
+
+		//so sánh cùng giá trị và kiểu dữ liệu
+
+		if( a === b ){
+			console.log(' a === b: đúng ');
+		}else{
+			console.log(' a === b: sai ');
+		}
+
+		let kiem_tra_1 = a == b;
+		console.log( kiem_tra_1 ); //true => boolean
+
+		/*
+		dùng toán tử so sánh : a == b : trả về giá trị true hoặc false
+		gán vào biến kiem_tra_1 để sử dụng
+		*/
+
+		let kiem_tra_2 = a === b;
+		console.log( kiem_tra_2 ); //false
+
+		let bat_dau  = 15;
+		let ket_thuc = 18;
+
+		let tuoi = 20;
+
+		//let kiem_tra_3 = tuoi > 15 && tuoi < 18;
+
+		//&&: hai điều kiện cùng thỏa mãn
+		if( tuoi > 15 && tuoi < 18 ){
+			console.log('Hoc Lớp A');
+		}
+
+		//||: thỏa mãi một trong số điều kiện
+		if( tuoi > 15 || tuoi < 18 ){
+			console.log('Hoc Lớp B');
+		}
+		// !: phủ định
+		if( !tuoi > 19 ){
+			console.log('Hoc Lớp C');
+		}
+
+
+
+	</script>
+</body>
+</html>
