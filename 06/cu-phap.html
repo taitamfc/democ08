@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Điều Kiện</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// let age = 18;
+
+		// if( age >= 18 ){
+		// 	document.write('Bạn có thể uống bia - ');
+		// }
+		// document.write('Chào bạn');
+
+		/*
+			if( ĐK1 ){
+				//Thực thi ĐK1
+			}elseif( ĐK2 ){
+				//Thực thi ĐK2	
+			}else{
+				//Thực thi ĐK3	
+			}
+		*/
+
+		let thang = prompt('Nhập tháng');
+
+		if( thang == 2 ){
+			document.write('Có 28 hoặc 29 ngày');
+		}else if( thang == 4 || thang == 6 || thang == 9 || thang == 11  ){
+			document.write('Có 30 ngày');
+		}else if( thang == 1 || thang == 3 || thang == 5 || thang ==  7 || thang == 8 || thang == 10 || thang == 12){
+			document.write('Có 31 ngày');
+		}else{
+			document.write('Tháng không hợp lệ');
+		}
+
+		
+
+
+	</script>
+</body>
+</html>

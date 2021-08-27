@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sự kiện</title>
+</head>
+<body>
+	Nhập tên: 
+	<input 
+	autocomplete="off" 
+	type="text" name="name" id="name" >
+
+	<p id="ket_qua"></p>
+
+	<script type="text/javascript">
+		/*
+		https://freetuts.net/su-kien-event-trong-javascript-368.html
+		*/
+
+		/*
+
+		document.getElementById('name').addEventListener('keyup',function(){
+
+			let ten = document.getElementById('name').value;
+
+			document.getElementById('ket_qua').innerHTML = ten;
+
+		});
+
+		*/
+
+		/*
+		let input_name = document.getElementById('name');
+		input_name.addEventListener('keyup',function(){
+			let ten = document.getElementById('name').value;
+			document.getElementById('ket_qua').innerHTML = ten;
+		});
+		*/
+
+		let input_name = document.getElementById('name');
+
+		input_name.addEventListener('keyup',khoi_xu_ly );
+
+		function khoi_xu_ly(){
+			let ten = document.getElementById('name').value;
+			document.getElementById('ket_qua').innerHTML = ten;
+		}
+
+
+
+
+	</script>
+</body>
+</html>
