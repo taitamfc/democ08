@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+
+	<style type="text/css">
+		img {
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<table width="600px">
+		<tr>
+			<td> <img id="img_1" src="./images/1.jpg" > </td>
+		</tr>
+		<tr>
+			<td> <img id="img_2" src="./images/2.jpg" > </td>
+		</tr>
+		<tr>
+			<td> <img id="img_3" src="./images/3.jpg" > </td>
+		</tr>
+		<tr>
+			<td> <img id="img_4" src="./images/4.jpg" > </td>
+		</tr>
+		<tr>
+			<td> <img id="img_5" src="./images/5.jpg" > </td>
+		</tr>
+	</table>
+
+	<script type="text/javascript">
+		function khoi_xu_ly( input_img ){
+
+		}
+	</script>
+
+	<script type="text/javascript">
+		
+		let img_1 = document.getElementById('img_1');
+		let img_2 = document.getElementById('img_2');
+		let img_3 = document.getElementById('img_3');
+		let img_4 = document.getElementById('img_4');
+		let img_5 = document.getElementById('img_5');
+
+		/*
+		let doi_tuong = document.getElementById('doi_tuong');
+		doi_tuong.addEventListener('TEN_SU_KIEN',function(){
+	
+		});
+
+		Math.floor(Math.random() * 15)+ 1 => 1 -> 15
+
+		thay đổi thuộc tính src
+		*/
+
+		img_1.addEventListener('click',function(){
+			let random = Math.floor(Math.random() * 15)+ 1;
+			img_1.src = 'images/' + random + '.jpg';
+		});
+
+		img_2.addEventListener('click',function(){
+			let random = Math.floor(Math.random() * 15)+ 1;
+			img_2.src = 'images/' + random + '.jpg';
+		});
+
+		img_3.addEventListener('click',function(){
+			let random = Math.floor(Math.random() * 15)+ 1;
+			img_3.src = 'images/' + random + '.jpg';
+		});
+
+		img_4.addEventListener('click',function(){
+			let random = Math.floor(Math.random() * 15)+ 1;
+			img_4.src = 'images/' + random + '.jpg';
+		});
+
+		img_5.addEventListener('click',function(){
+			let random = Math.floor(Math.random() * 15)+ 1;
+			img_5.src = 'images/' + random + '.jpg';
+		});
+		
+
+		//thay doi thuoc tinh src
+		/*
+		let random = Math.floor(Math.random() * 15);//1 -> 15
+		console.log( 'images/' + random + '.jpg' );
+		img_1.src = 'images/' + random + '.jpg';
+		*/
+
+		//tao ra mot so ngau nhien tu 1 -> 15
+
+	</script>
+</body>
+</html>

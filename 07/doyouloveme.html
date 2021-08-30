@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>DO you love me ?</title>
+</head>
+<body>
+        <h1 style="position:absolute; left:220px; top:175px;">Do you love me?</h1>
+        <input type="button" value=" YES " onclick="yesClick()" style="position:absolute; left:285px; top:235px;">
+        <input type="button" id="btnNo" value="  NO  " onmouseover="noHover()" style="position:absolute; ">
+
+        <script type="text/javascript">
+        	function yesClick(){
+        		alert('Thanks !');
+        	}
+
+        	function noHover() {
+        		//alert('Hover me !');
+
+        		let random_left = Math.floor(Math.random() * 500) + 100;
+        		let random_top = Math.floor(Math.random() * 500) + 100;
+
+        		console.log( 'random_left: ' + random_left );
+        		console.log( 'random_top: ' + random_top );
+
+        		//lấy đối tượng 
+        		let btnNo = document.getElementById('btnNo');
+        		btnNo.style.left = random_left + 'px'; //584 + 'px' => '584px';
+        		btnNo.style.top = random_top + 'px'; //460 + 'px' => '460px';
+
+        	}
+        </script>
+    
+</body>
+</html>
