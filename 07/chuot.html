@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Thực hành sự kiện chuột</title>
+</head>
+<body>
+	<form>
+	    <img id="myImage" src="images/ball.jpg" width="100"  />
+	    <p>Click button below to move the image to right</p>
+	    <input type="button" value="Sang phải" onclick="move_phai()" />
+	    <input type="button" value="Sang trái" onclick="move_trai()" />
+	</form>
+
+	<script type="text/javascript">
+		//cửa sổ trình duyệt vừa được tải thì nó sẽ gọi tới khối init
+		window.onload = init();
+
+		function init() {
+		    imgObj = document.getElementById('myImage');
+		    imgObj.style.position = 'relative';
+		    imgObj.style.left = '0px';
+		}
+
+		function move_phai(){
+			let myImage = document.getElementById('myImage');
+	
+			//tăng giá trị left lên
+			let left = parseInt( myImage.style.left ); //0px => 0
+			left = left + 10; //tăng lên 10 đơn vị
+
+			//đặt lại cho thuộc tính style của thẻ img
+			myImage.style.left = left + 'px'; //10 + 'px' => 10px
+
+		}
+
+		function move_trai(){
+			let myImage = document.getElementById('myImage');
+	
+			//tăng giá trị left lên
+			let left = parseInt( myImage.style.left ); //0px => 0
+			left = left - 10; //giảm 10 đơn vị
+
+			//đặt lại cho thuộc tính style của thẻ img
+			myImage.style.left = left + 'px'; //10 + 'px' => 10px
+
+		}
+	</script>
+
+</body>
+</html>

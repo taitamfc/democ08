@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Nobita</title>
+</head>
+<body onload="docReady()">
+	<img id="myImage" src="images/ball.jpg" width="100" style="position:relative;left: 0px;top:0px;"  />
+
+	<script type="text/javascript">
+
+		function docReady(){
+			//bắt sự kiện nhấn phím
+			window.addEventListener('keydown', moveSelection );
+		}
+
+		function moveSelection( evt ){
+			
+			switch( evt.key ){
+				case 'ArrowRight':
+					move_phai();
+					break;
+				case 'ArrowDown':
+					move_xuong()
+					break;	
+				case 'ArrowLeft':
+					move_trai();
+					break;	
+				case 'ArrowUp':
+					move_len();
+					break;	
+			}
+		}
+
+		function move_phai(){
+			let myImage = document.getElementById('myImage');
+	
+			//tăng giá trị left lên
+			let left = parseInt( myImage.style.left ); //0px => 0
+			left = left + 10; //tăng lên 10 đơn vị
+
+			//đặt lại cho thuộc tính style của thẻ img
+			myImage.style.left = left + 'px'; //10 + 'px' => 10px
+
+		}
+
+		function move_trai(){
+			let myImage = document.getElementById('myImage');
+	
+			//tăng giá trị left lên
+			let left = parseInt( myImage.style.left ); //0px => 0
+			left = left - 10; //giảm 10 đơn vị
+
+			//đặt lại cho thuộc tính style của thẻ img
+			myImage.style.left = left + 'px'; //10 + 'px' => 10px
+
+		}
+
+		function move_xuong(){
+			let myImage = document.getElementById('myImage');
+			let top = parseInt( myImage.style.top );//0px => 0
+			top = top + 10;//tăng lên 10 đơn vị
+
+			//đặt lại cho thuộc tính style của thẻ img
+			myImage.style.top = top + 'px';//10 + 'px' => 10px
+
+		}
+
+		function move_len(){
+			let myImage = document.getElementById('myImage');
+			let top = parseInt( myImage.style.top );//0px => 0
+			top = top - 10;//giảm 10 đơn vị
+
+			//đặt lại cho thuộc tính style của thẻ img
+			myImage.style.top = top + 'px';//10 + 'px' => 10px
+		}
+		
+	</script>
+</body>
+</html>
