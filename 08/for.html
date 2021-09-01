@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Loop</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//in ra câu chào lớp C8 500 lần
+
+		/*
+		document.write();
+		alert();
+		console.log();
+		*/
+
+		/*
+		số lần lặp mà chúng ta biết trước thì sẽ thường sử dụng vòng lặp
+		FOR
+
+		for( initial ; condition ; action-after ){
+	
+		}
+
+		for( khởi tạo ; điều kiện ; hành động sau đó ){
+	
+		}
+
+		 initial-action: là các câu lệnh được thực thi một lần duy nhất khi vòng lặp bắt đầu chạy
+		• loop-continuation-condition: là biểu thức điều kiện để xác định xem vòng lặp có được tiếp tục hay không
+		• statement(s): là khối lệnh sẽ được thực thi trong mỗi lần lặp
+		• action-after-each-iteration: là các câu lệnh được thực thi sau mỗi lần lặp
+		*/
+
+		/*
+		let i = 0; //initial-action
+		if( i < 10 ){
+			//thực hiện điều j đó - statement(s)
+
+			i++; //action-after-each-iteration
+		}
+		
+		// i = 1;
+		if( i < 10 ){
+			//thực hiện điều j đó - statement(s)
+
+			i++; //action-after-each-iteration
+		}
+
+		// i = 2;
+		if( i < 10 ){
+			//thực hiện điều j đó - statement(s)
+
+			i++; //action-after-each-iteration
+		}
+
+		...
+
+		// i = 10;
+		if( i < 10 ){
+			//thực hiện điều j đó - statement(s)
+
+			i++; //action-after-each-iteration
+		}
+		=> THOÁT KHỎI VÒNG LẶP
+		STOP
+		*/
+
+		for( let i = 0; i < 10; i ++ ){
+			//document.write('Chào lớp C8 <br>');
+		}
+
+		/*
+		5 -> 0 => 5 => 4 => 3 => 2 => 1 
+		let j = 5;
+		
+		if( j > 0 ){
+			//thực hiện điều j đó - statement(s)
+
+			j--;
+
+		}
+
+		*/
+
+		document.write('Bắt đầu vòng lặp <hr>');
+
+		for ( let j = 5; j > 0; j-- ) {
+			document.write('Chào lớp C8 lân ' + j  + '<br>');
+		}
+
+		document.write('<hr> Thoát khỏi vòng lặp ');
+
+
+		
+
+
+	</script>
+</body>
+</html>

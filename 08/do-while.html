@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Do While</title>
+</head>
+<body>
+	<script>
+		/*	
+			Chơi bida, 
+			đánh Đề ba => trúng - đánh tiếp => trúng - đánh tiếp trúng - đánh tiếp;
+
+			đánh Đề ba => trật => người khác đánh tiếp
+
+			Đoán đúng tiếp
+
+			do {
+				//đánh thử
+
+				//đúng đánh tiếp
+	
+			}while( điều kiện )
+
+			//thoát vòng lặp
+
+			Vòng lặp do_while chỉ xảy ra khi mà thỏa mãn điều kiện,
+			cho phép chạy một lần trước, rồi mới kiểm tra điều kiện.
+		*/
+
+		let ket_qua = 5;
+		let so_doan = 0;
+		do{
+			//thực hiện khối lệnh
+
+			//hiển thị ô nhập số
+			so_doan = prompt('Nhập số đoán');
+
+		}while( so_doan != ket_qua )//kiểm tra điều kiện
+		//điều kiện, nếu so_doan ko đúng thì chạy tiếp
+		document.write('Chính xác !');
+
+	</script>
+</body>
+</html>
