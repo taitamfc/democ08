@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Mảng Đa CHiều</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		let mang_1_chieu = [ 'Sách Văn' , 'Sách Toán', 'Sách Lý' ];
+		//						0             1           2
+
+
+
+
+		let mang_2_chieu = [
+			[ 'Sách Văn' , 'Sách Toán', 'Sách Lý' ], // 0
+		    //  0              1           2
+
+			[ 'Sách Sử' , 'Sách Địa', 'Sách Hóa' ] // 1
+			//  0              1           2
+		];
+
+		
+
+		for( let i = 0; i < mang_2_chieu.length ; i ++ ){
+			/*
+			i = 0
+				mang_2_chieu[0].length = 3;
+				mang_2_chieu[0] => [ 'Sách Văn' , 'Sách Toán', 'Sách Lý' ]
+										0             1          2
+				j = 0 => mang_2_chieu[0][0]
+				j = 1 => mang_2_chieu[0][1]
+				j = 2 => mang_2_chieu[0][2]
+
+			i = 1
+				mang_2_chieu[1].length = 3;
+				mang_2_chieu[1] => [ 'Sách Sử' , 'Sách Địa', 'Sách Hóa' ]
+										0           1           2
+				j = 0 => mang_2_chieu[1][0]
+				j = 1 => mang_2_chieu[1][1]
+				j = 2 => mang_2_chieu[1][2]
+
+			*/
+			for( let j = 0; j <  mang_2_chieu[i].length ; j ++ ){
+				console.log( mang_2_chieu[i][j] );
+			}
+			console.log( "===================" );
+		}
+
+
+		let mang_3_chieu = [
+			[ 
+				[ 'Sách Văn' , 'Sách Sử' ], //0
+				//  0             1
+				[ 'Sách Anh' , 'Sách Sinh' ] // 1
+				//  0             1 
+			], // 0
+			[ 
+
+				[ 'Sách Toán' , 'Sách Hóa' ], // 0
+				//   0              1
+				[ 'Sách Đạo Đức' , 'Sách Công Nghệ' ] //1
+				//   0               1
+
+			] // 1
+		];
+
+
+
+
+	</script>
+
+</body>
+</html>

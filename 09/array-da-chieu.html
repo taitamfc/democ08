@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Mảng Đa CHiều</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		let tu_sach_1 = [ 'Sách Văn' , 'Sách Toán', 'Sách Lý' ];
+		//					0             1            2
+		/*
+			let lay_sach = tu_sach_1[0];
+			let lay_sach = tu_sach_1[1];
+			let lay_sach = tu_sach_1[2];
+		*/
+
+		let tu_sach_2 = [ 'Sách Sử' , 'Sách Địa', 'Sách Hóa' ];
+
+		let thu_vien = [ tu_sach_1, tu_sach_2 ];
+			//				0           1
+
+		//một hộp, chứa các hộp => mảng đa chiều
+		//mảng đa chiều là mảng mà chứa các mảng con
+
+		let thu_vien_2 = [
+			[ 'Sách Văn' , 'Sách Toán', 'Sách Lý' ], // 0
+		    //  0              1           2
+
+			[ 'Sách Sử' , 'Sách Địa', 'Sách Hóa' ] // 1
+			//  0              1           2
+		];
+
+		
+
+		let lay_sach = thu_vien_2[0][0]; //tu_sach_1 [0] -> 'Sách Văn'
+
+		/*
+		Địa lý:
+
+		Anh Giang: thu vien[1][1]
+		Hưng: thuvien[2][1]
+		h.cường: thuvien[1][1]
+		nhi: thuvien[1][1]
+		hạnh: thuvien[1][1]
+
+		Mảng 2 chiều thì cần chỉ số để truy cập vào phần tử
+
+		thu_vien_2[]
+
+		*/
+
+		console.log( lay_sach[0][2] );
+
+
+		let mang_3_chieu = [
+			[ 
+				[ 'Sách Văn' , 'Sách Sử' ], //0
+				//  0             1
+				[ 'Sách Anh' , 'Sách Sinh' ] // 1
+				//  0             1 
+			], // 0
+			[ 
+
+				[ 'Sách Toán' , 'Sách Hóa' ], // 0
+				//   0              1
+				[ 'Sách Đạo Đức' , 'Sách Công Nghệ' ] //1
+				//   0               1
+
+			] // 1
+		];
+
+
+		/*
+			Sách Hóa
+			Xuân Cường: mang_3_chieu[1][0][1]
+			Thế Cường: mang_3_chieu[1][0][1]
+			Hưng: mang_3_chieu[1][0][1]
+			NHi: mang_3_chieu[1][0][1]
+			Hạnh: mang_3_chieu[1][0][1]
+		*/
+
+		console.log( mang_3_chieu[1][0][1] );
+
+	
+
+	</script>
+
+</body>
+</html>
