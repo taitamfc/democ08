@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Push</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		let books = ['Sách Địa'];
+
+		//đưa các cuốn sách vào tủ sách
+		books.push('Sách Văn');		//1
+		books.push('Sách Toán');	//2
+		books.push('Sách Lý');		//3
+
+		
+
+		let numbers = [];
+		for( let i = 0; i < 10; i ++ ){
+			/*
+			i = 1 => numbers[1] = 1
+			i = 2 => numbers[2] = 2
+			i = 3 => numbers[3] = 3
+			i = 100 => numbers[100] = 100
+			*/
+			//numbers[i] = i + 1;
+
+			numbers.push(i + 1);//1 2 3 4
+		}
+
+		//numbers[0]
+		console.log( numbers ); // 1 2 3 4 5 6 7 8 9 10;
+
+		//
+
+		let even_numbers = [];
+
+		//duyệt mảng numbers
+		for( let n = 0; n < numbers.length; n ++ ){
+			/*
+			1 2 3 4 5 6 7 8 9 10;
+			*/
+
+			let value = numbers[n];//1 2 3 4 5 6 7 8 9 10;
+			if( value % 2 == 0 ){
+				even_numbers.push(value);
+			}
+		}
+
+		console.log( even_numbers ); // 1 2 3 4 5 6 7 8 9 10;
+
+
+	</script>
+</body>
+</html>

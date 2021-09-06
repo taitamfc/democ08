@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Splice</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let hello_msg = ['Xin','chào','C08'];
+		//				  0      1      2	
+		//Xin, chào, anh, chị , em , c08
+		//0    1     2     3     4    5
+		//console.log( hello_msg); // ['Xin','chào','C08']
+
+		//arr.splice(index, howmany, item1, ....., itemX)
+
+		hello_msg.splice(2,0,'anh','chị','em');
+
+		//index: thêm vào vị trí nào
+		//howmany: xóa bao nhiêu phần tử từ vị trí đó
+		//các phần tử được thêm vào
+
+		let hello_msg_2 = ['Xin', 'chào', 'anh', 'chị' , 'em' , 'c08'];
+		//					0       1       2      3      4       5
+
+
+		hello_msg_2.splice(4,1);//4: chỉ số, 1: xóa bao nhiêu từ vị trí số 4
+
+		/*
+			thêm phần tử tại vị trí xác định trong mảng
+			xóa phần tử tại vị trí xác định trong mảng
+		*/
+
+		console.log(hello_msg_2);
+
+	</script>
+</body>
+</html>

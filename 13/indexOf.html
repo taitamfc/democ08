@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>IndexOF</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let english 	= ['Hello','GoodBye'];
+						//  0         1 
+		let vietnamese 	= ['Xin chào','Tạm biệt'];
+						//	0          1
+
+
+		let key = english.indexOf('Love');//-1
+		// let key = english.indexOf('GoodBye');//1
+		// let key = english.indexOf('Hello');//0
+
+		if( key < 0 ){
+			document.write('Không tìm thấy');
+		}else{
+			let find = vietnamese[key];
+			document.write(find);
+		}
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>map</title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*
+		array.map(function(item){
+		    // item chính là phần tử đang lặp
+		    return item; // giá trị trả về sẽ thay thế cho giá trị ban đầu của phần tử
+		});
+		*/
+
+		let arr = [ "Xin", "chào", "anh em", "C08" ];
+
+		let arr_2 = arr.map(function(item){
+		    return item + '^^';
+		});
+
+		//tương đương với hàm map
+		for( let i = 0; i < arr.length; i ++ ){
+			arr[i] = arr[i] + '^^'; //kết hợp với dấu ^^ và thay đổi giá trị phần tử tại ngăn i
+		}
+
+		console.log(arr);
+		console.log(arr_2);
+	</script>
+</body>
+</html>
