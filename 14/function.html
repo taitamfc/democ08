@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Hàm</title>
+</head>
+<body>
+	<button onclick="">Click Me</button>
+
+	<script type="text/javascript">
+
+		/*
+		Hàm: là tập hợp các đoạn mã để thực thi một công việc nhất định
+		*/
+		function khoi_xu_ly(){
+			/*
+				khoi_xu_li is not defined => chúng ta gọi khối xử lý ( function ), chưa định nghĩa
+				b is not defined => chưa định nghĩa b hoặc chưa lưu biến b vào bộ nhớ
+			*/
+			alert('123');
+			alert('345');
+			let vietnamese = 5;
+			alert(vietnamese);//vietnamese chưa lưu vào bộ nhớ => vietnamese is not defined
+		}
+
+		/* cú pháp 
+
+			function TEN_HAM(){
+				//code xu ly
+			}
+		*/
+		/* khai báo hàm */
+		function chao_mung(){
+			document.write('Hello function 1');
+		}
+
+		/* gọi hàm 
+		TEN_HAM();
+		*/
+		chao_mung();
+		chao_mung(); 
+		chao_mung(); // thực hiện các đoạn mã khi được gọi
+
+
+
+	</script>
+</body>
+</html>

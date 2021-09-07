@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Hàm</title>
+</head>
+<body>
+	<!-- <button onclick="">Click Me</button> -->
+
+	<script type="text/javascript">
+
+		/*
+		a là biến đại diện khi hàm được gọi và đưa vào một giá trị gì đó
+		a được gọi là tham số
+
+		các tham số được phân tách với nhau bằng dấu ,
+		*/
+		function tinh_tong( a , b ){
+			//a nhận được giá trị truyền vào, lưu vào bộ nhớ với tên gọi là a có giá trị là 'Mùa thu'
+			// document.write( a );
+			// document.write( '<hr>' );
+			// document.write( b );
+
+			let c = a + b;
+			document.write( ` Kết quả là ${c} ` );
+		}
+
+		function findMaxNumber( arr ){
+			let max = arr[0];
+			for( let i = 1; i < arr.length ; i++  ){
+				if( arr[i] > max  ){
+					max = arr[i];
+				}
+			}
+			document.write(`Số lớn nhất là ${max}`);
+		}
+
+		//console.log( a );
+
+		//gọi hàm
+		/*
+		5: là đối số tương ứng với tham số a
+		7: là đối số tương ứng với tham số b
+		*/
+		//tinh_tong( 5 , 7 );
+
+		
+
+		let numbers_1 = [1,5,3,11,5];
+		let numbers_2 = [1,5,3,7,5];
+
+		// findMaxNumber( numbers_1 );
+		// findMaxNumber( numbers_2 );
+
+		function chao_mung( ts_name, ts_lop ){
+			/*
+			pham vi cac bien ben trong ko anh huong ra ben ngoai
+			*/
+			/*
+			name: C05
+			lop: Hanh
+			*/
+			document.write( ` Xin chào bạn ${ts_name} tới lớp ${ts_lop} <br>` );
+		}
+
+
+		// chao_mung( 'Hưng', 'C06' );
+		// chao_mung( 'Hạnh', 'C05' );
+
+
+		let lop = 'C05';
+		let name = 'Hạnh';
+
+		chao_mung(  lop, name );
+		//dự đoán kết quả của hàm
+
+
+	</script>
+</body>
+</html>
