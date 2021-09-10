@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Hàm có sự trả về</title>
+</head>
+<body>
+	<!-- <button onclick=" kiem_tra( ts_age ) ">Click Me</button> -->
+
+	<script type="text/javascript">
+
+		//viết một hàm, có 2 tham số, trong đó truyền 2 giá trị a,b
+		// nếu a lớn hơn b, thì trả về câu "A lớn hơn B"
+
+		function xu_ly( a , b ){
+			if( a > b ){
+				return "A lớn hơn B";
+			}else{
+				return "A nhỏ hơn B";
+			}
+
+			return;
+		}
+
+		let result = xu_ly( 7, 5 );
+
+		//document.write( xu_ly( 7, 5 ) );
+		document.write(result);
+
+		/*
+		//khai báo hàm: 1 tham số
+		function kiem_tra( ts_age ){
+			if( ts_age > 17 ){
+				alert( 'Bạn là người trưởng thành' );
+			}else{
+				alert( 'Bạn chưa đủ tuổi trưởng thành' );
+			}
+
+			//có sự trả về: return
+		}
+
+		//gọi hàm từ mã
+		let age = 18;
+		//kiem_tra( age );
+
+		kiem_tra( 18 );
+		*/
+
+		function sum(a,b){
+			return a + b;
+		}
+
+		let kq = sum(5,6) + 10;
+
+
+	</script>
+</body>
+</html>
