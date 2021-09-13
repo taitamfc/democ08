@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Class</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		//khai báo lớp
+		let Hinh_Hoc = function( ts_chieu_dai, ts_chieu_rong ){
+			//thuộc tính
+			this.chieu_dai 	= ts_chieu_dai;
+			this.chieu_rong = ts_chieu_rong;
+
+			this.tinh_chu_vi = function(){
+				let chu_vi = ( this.chieu_dai + this.chieu_rong ) * 2;
+				return chu_vi;
+			}
+
+			this.tinh_dien_tich = function(){
+				let dien_tich = this.chieu_dai * this.chieu_rong;
+			}
+		}
+
+		//khởi tạo đối tượng từ lớp
+		let hinh_chu_nhat = new Hinh_Hoc( 20,30 );
+
+		let chu_vi = hinh_chu_nhat.tinh_chu_vi();
+
+		document.write( chu_vi );
+
+
+
+	</script>
+</body>
+</html>

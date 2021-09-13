@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Đối tượng</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		let hinh_chu_nhat = {
+			chieu_dai 	: 20,
+			chieu_rong 	: 30,
+			tinh_chu_vi : function(){
+				let chu_vi = ( this.chieu_dai + this.chieu_rong ) * 2;
+				console.log( 'tinh_chu_vi: ' + chu_vi );
+			},
+			tinh_dien_tich: function(){
+				let dien_tich = this.chieu_dai * this.chieu_rong;
+				return 'dien_tich: ' + dien_tich;
+			}
+		};
+
+		let hinh_vuong = {
+			chieu_dai 	: 50,
+			chieu_rong 	: 50,
+			tinh_chu_vi : function(){
+				let chu_vi = ( this.chieu_dai + this.chieu_rong ) * 2;
+				return chu_vi;
+			},
+			tinh_dien_tich: function(){
+				let dien_tich = this.chieu_dai * this.chieu_rong;
+				return dien_tich;
+			}
+		};
+
+		let dt_hinh_vuong = hinh_vuong.tinh_dien_tich();
+		let cv_hinh_vuong = hinh_vuong.tinh_chu_vi();
+
+		console.log( 'Diện tích của hình vuông là: ' + dt_hinh_vuong );
+		console.log( 'Chu vi của hình vuông là: ' + cv_hinh_vuong );
+		
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>THực hành lớp Date</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		/*
+		================
+		MyDate
+		================
+		day:int => thuộc tính day có kiểu dữ liệu là số
+		month:int => thuộc tính month có kiểu dữ liệu là số
+		year:int => thuộc tính month có kiểu dữ liệu là số
+		*name:String => thuộc tính name có kiểu dữ liệu là chuỗi
+		================
+		MyDate( ts_day:int,ts_month: int, ts_year: int ) => phương thức khởi tạo
+
+		// thuộc nhóm getter => nhóm trả về giá trị thuộc tính
+		//get : lấy
+		getDay():int => trả về giá trị mang kiểu dữ liệu là số
+		getMonth():int => trả về giá trị mang kiểu dữ liệu là số
+		getYear():int => trả về giá trị mang kiểu dữ liệu là số
+
+		//thuộc nhóm setter => nhóm thay đổi giá trị thuộc tính
+		//set : thiết lập
+		setDay( ts_day:int ):void => void: ko có sự trả về
+		setMonth( ts_month:int ):void => void: ko có sự trả về
+		setYear( ts_year:int ):void => void: ko có sự trả về
+		setDate( ts_day:int, ts_month:int , ts_year:int ): void
+	
+		//chuyển đối tượng sang dạng chuỗi
+		//toString(): String => trả về kiểu dữ liệu là chuỗi
+		================
+		*/
+
+
+		//tạo lớp
+		let MyDate = function( ts_day,ts_month, ts_year){
+			//tầng thuộc tính
+			this.day 	= ts_day;
+			this.month 	= ts_month;
+			this.year 	= ts_year;
+
+			//tầng phương thức
+
+			//phương thức trả về giá trị thuộc tính day
+			this.getDay = function(){
+				return this.day;
+			}
+			//phương thức trả về giá trị thuộc tính month
+			this.getMonth = function(){
+				return this.month;
+			}
+			//phương thức trả về giá trị thuộc tính year
+			this.getYear = function(){
+				return this.year;
+			}
+
+			//phương thức thiết lập giá trị thuộc tính day
+			this.setDay = function( ts_day ){
+				this.day = ts_day;
+			}
+			//phương thức thiết lập giá trị thuộc tính month
+			this.setMonth = function( ts_month ){
+				this.month = ts_month;
+			}
+			//phương thức thiết lập giá trị thuộc tính year
+			this.setYear = function( ts_year ){
+				this.year = ts_year;
+			}
+
+			//phương thức thiết lập giá trị thuộc tính day, month, year
+			this.setDate = function( ts_day, ts_month, ts_year ){
+				//ts_day = 25
+				//ts_month = 12
+				//ts_year = 2022
+
+				this.day = ts_day;
+				this.month = ts_month;
+				this.year = ts_year;
+			}
+
+			this.toString = function(){
+				//Ngày ... tháng ... năm....
+				return `Ngày ${this.day} tháng ${this.month} năm ${this.year}`;
+			}
+		};
+
+		//khởi tạo đối tượng my_date từ lớp MyDate
+		let my_date = new MyDate( 13,9, 2021) ;
+		console.log( my_date );
+
+		//thay đổi giá trị thuộc tính day = 14
+		my_date.day = 14;
+
+		//thay đổi giá trị thuộc tính month = 10
+		my_date.month = 10;
+
+		//thay đổi giá trị thuộc tính year = 2022
+		my_date.year = 2022;
+
+		//thay đổi giá trị thuộc tính day = 15 qua phương thức
+		my_date.setDay(15);
+
+		//thay đổi giá trị thuộc tính month = 10 qua phương thức
+		my_date.setMonth(10);
+
+		//thay đổi giá trị thuộc tính year = 2023 qua phương thức
+		my_date.setYear(2023);
+
+		my_date.setDate( 25,12,2022 );
+
+		//truy xuất thuộc tính day
+		console.log( 'day:' + my_date.day );
+
+		//truy xuất thuộc tính month
+		console.log( 'month:' + my_date.month );
+
+		//truy xuất thuộc tính year
+		console.log( 'year:' + my_date.year );
+
+		//truy xuất thuộc tính day thông qua phương thức
+		console.log( 'day từ phương thức: ' + my_date.getDay() );
+
+		//truy xuất thuộc tính month thông qua phương thức
+		console.log( 'month từ phương thức: ' + my_date.getMonth() );
+
+		//truy xuất thuộc tính year thông qua phương thức
+		console.log( 'year từ phương thức: ' + my_date.getYear() );
+
+
+		//truy xuất phương thức toString
+		console.log( my_date.toString() );
+
+
+	</script>
+
+</body>
+</html>

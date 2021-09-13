@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Đối tượng</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// document.getElementById('id_input');
+		// document.write('Hello OOP');
+		//
+
+		//arr = [0,1]
+		//object = { ten:gia_tri,ten:gia_tri }
+
+		// .innerHTML = '';
+
+		let document_fake = {
+			innerHTML : '',
+			getElementById: function( ts_id_phan_tu ){
+				console.log('ts_id_phan_tu: ' + ts_id_phan_tu);
+			},
+			write: function( ts_noi_dung ){
+				console.log('ts_noi_dung: ' + ts_noi_dung);
+			}
+		};
+
+		//thay đổi giá trị thuộc tính
+		document_fake.innerHTML = 'Xin chào C8';
+
+		console.log( document_fake );
+
+		document_fake.getElementById('ket_qua');
+		document_fake.write('Hello OOP');
+
+
+	</script>
+</body>
+</html>

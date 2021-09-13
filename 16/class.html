@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Class</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// class Hinh_Hoc{
+		// 	tinh_chu_vi(){
+
+		// 	}
+		// 	tinh_dien_tich(){
+
+		// 	}
+		// }
+
+		//tạo lớp
+		let Hinh_Hoc = function(){
+			//thuộc tính
+			this.chieu_dai 	= '';
+			this.chieu_rong = '';
+
+			//phương thức
+			this.tinh_chu_vi = function(){
+				let chu_vi = ( this.chieu_dai + this.chieu_rong ) * 2;
+				return chu_vi;
+			}
+
+			this.tinh_dien_tich = function(){
+				let dien_tich = this.chieu_dai * this.chieu_rong;
+			}
+		}
+
+		//khởi tạo đối tượng từ lớp bằng từ khóa new
+		let hinh_chu_nhat = new Hinh_Hoc();
+
+		//truy xuất + thay đổi giá trị thuộc tính
+			//chieu_dai => 20
+			hinh_chu_nhat.chieu_dai = 20;
+
+			//chieu_rong => 50
+			hinh_chu_nhat.chieu_rong = 50;
+
+		//truy xuất phương thức tính chu vi
+		hinh_chu_nhat.tinh_chu_vi();
+
+		//xuất ra chu vi của hình chữ nhật
+		console.log( hinh_chu_nhat.tinh_chu_vi() );
+	</script>
+</body>
+</html>

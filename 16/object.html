@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Đối tượng</title>
+</head>
+<body>
+	<script type="text/javascript">
+		console.log( document.URL );
+		document.getElementById('ket_qua');
+
+
+		//tạo mảng:
+		let person_1_arr = [
+			'Nhi','Female'
+		];
+		console.log( person_1_arr[0] );
+		console.log( person_1_arr[1] );
+
+		//cú pháp
+		let objectName = {};
+
+		//tạo đối tượng
+		let person_1 = {
+			name 	: 'Nhi', //thuộc tính
+			gender 	: 'Female',//thuộc tính
+			//phương thức RUN
+			run 	: function(){ 
+				console.log('Nhi đang chạy');
+			},
+			stop 	: function(){
+				console.log('Nhi dừng lại');
+			},
+			tang_toc : function() {
+				return 'Nhi đang tăng tốc';
+			}
+		};
+
+		let person_2 = {
+			name 	: 'QUốc',
+			gender 	: 'Female'
+		}
+
+		console.log( person_1 );
+
+		
+
+		//truy xuất : dùng dấu .
+			// truy xuất thuộc tính name
+			console.log( person_1.name );
+
+			// truy xuất thuộc tính gender
+			console.log( person_1.gender );
+
+			//truy xuất phương thức run
+			person_1.run();
+
+			//truy xuất phương thức stop
+			person_1.stop();
+
+			console.log( person_1.tang_toc() );
+
+
+		// 	//Truy xuất thuộc tính name
+		// 	console.log( person_2.name );
+
+		// 	//Truy xuất thuộc tính gender
+		// 	console.log( person_2.gender );
+	</script>
+</body>
+</html>
