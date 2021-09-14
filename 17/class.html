@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Class</title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*
+		let Human = function( ts_name, ts_age ){
+			//thuoc tinh
+			this.tt_1 = '';
+			this.tt_2 = '';
+
+			//phuong thuc
+			this.pt_1 = function(){
+
+			}
+
+			this.pt_2 = function(){
+				
+			}
+		};
+		*/
+
+		//Khai bao lop SinhVien
+		class SinhVien{
+			//phuong thuc khoi tao
+			constructor( ts_name, ts_age ){
+				//khai bao thuoc tinh
+				this.name 	= ts_name;
+				this.age 	= ts_age;
+				this.gender = true;
+			}
+
+			//khai bao phuong thuc
+
+			//thiet lap gia tri thuoc tinh name
+			setName(ts_name){
+				this.name = ts_name;
+			}
+
+			//tra ve gia tri thuoc tinh name
+			getName(){
+				return this.name;
+			}
+
+			//tra ve thong tin cua sinh vien
+			showInfo(){
+				let info = `Ten: ${this.name} - Tuoi: ${this.age}`;
+				return info;
+			}
+		}
+
+		let objSinhVien = new SinhVien('Nguyen Van B', 18);
+		//objSinhVien.setName('Nguyen Van A');
+
+		console.log( objSinhVien.showInfo() );
+
+	</script>
+</body>
+</html>

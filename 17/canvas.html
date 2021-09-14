@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Canvas</title>
+</head>
+<body>
+	<canvas style="border:1px solid red;" width="500px" height="500px" id="mycanvas">1234</canvas>
+
+	<script type="text/javascript">
+		var c 	= document.getElementById("mycanvas");
+		var ctx = c.getContext("2d");
+
+		/* DUONG THANG */
+		//diem xuat phat
+		//x,y
+		ctx.moveTo(20,0);
+
+		//diem ket thuc
+		//x,y
+		ctx.lineTo(20,500);
+
+		//ve
+		ctx.stroke();
+
+		/* HINH TRON */
+		ctx.beginPath();
+		//		x ,y ,r ,sAngle, eAngle
+		ctx.arc(300,50,40,0,2*Math.PI);
+		ctx.stroke();
+
+		/* VE CHU */
+		ctx.font = "30px Arial";
+		ctx.fillText("Hello World",100,50);
+
+		/* HINH CHU NHAT */
+		
+
+		let x = 10;
+		let y = 40;
+		let w = 140;
+		let h = 160;
+
+		setInterval(function(){ 
+
+
+			ctx.clearRect(x, y, w, h);
+            y = y + 15;
+
+            ctx.fillRect(x, y, w, h);
+			
+		}, 1000);
+
+		
+
+	</script>
+</body>
+</html>
