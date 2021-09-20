@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		//===============getItem( khóa): lấy từ Lưu trữ cục bộ==================
+		
+		//lấy email
+		let email_val = localStorage.getItem('email');
+		console.log( 'email_val:' + email_val );
+
+		//lấy phone
+		let phone_val = localStorage.getItem('phone');
+		console.log( 'phone_val:' + phone_val );
+
+		//lấy user_1
+		let user_1_val = localStorage.getItem('user_1');
+
+		//chuyển chuỗi JSON sang đối tượng
+		user_1_val = JSON.parse( user_1_val );
+		console.log( 'user_1_val:');
+		console.log(  user_1_val );
+
+		//lấy cart
+		let cart_val = localStorage.getItem('cart');
+		cart_val = JSON.parse( cart_val );
+		console.log( 'cart_val:');
+		console.log(  cart_val );
+
+		//lấy products
+		let products_val = localStorage.getItem('products');
+		products_val = JSON.parse( products_val );
+		console.log( 'products_val:');
+		console.log(  products_val );
+
+	</script>
+</body>
+</html>

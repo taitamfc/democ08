@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+</head>
+
+<body>
+    <script>
+        let email = prompt('Nhập email');
+        let pass = prompt('Nhập password');
+
+        let new_user = {
+            'email': email,
+            'pass': pass
+        };
+
+        let users = localStorage.getItem('users');
+
+        console.log(users);
+
+        if (users) {
+            //đã có giá trị thì sẽ chuyển thành mảng
+            users = JSON.parse(users); // array
+        } else {
+            //chưa có giá trị thì để là mảng rỗng
+            users = [];
+        }
+
+        //thêm mới một user
+        users.push(new_user);
+
+        //lưu trữ cục bộ bằng từ khóa users
+        users = JSON.stringify(users);
+        localStorage.setItem('users', users);
+
+        //xuất ra
+        console.log(JSON.parse(users));
+
+
+    </script>
+</body>
+
+</html>

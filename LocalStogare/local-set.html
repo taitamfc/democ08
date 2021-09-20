@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Local Stogared</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//alert(123);
+
+		//===============setItem( khóa,giá trị ): Lưu vào Lưu trữ cục bộ==================
+
+		//Lưu giá trị chuỗi
+		localStorage.setItem('email','a@gmail.com');
+
+		//lưu giá trị số
+		localStorage.setItem('phone',123456789);
+
+		let user_1 = {
+			'name' : 'Nguyễn Văn A', 
+			'email' : 'a@gmail.com', 
+			'phone' : '0123456789', 
+		};
+		//chuyển đổi sang chuỗi JSON
+		user_1 = JSON.stringify(user_1);
+
+		//lưu đối tượng
+		localStorage.setItem('user_1',user_1);
+
+		//lưu mảng
+		let cart = [
+			[
+				'Sản phẩm A',
+				10
+			],
+			[
+				'Sản phẩm B',
+				5
+			]
+		];
+		//chuyển đổi sang chuỗi JSON
+		cart = JSON.stringify(cart);
+
+
+		let products = [
+			{
+				'id': 1,
+				'name': 'Sản phẩm A',
+				'price': 20000,
+			},
+			{
+				'id': 2,
+				'name': 'Sản phẩm B',
+				'price': 30000,
+			},
+			{
+				'id': 3,
+				'name': 'Sản phẩm C',
+				'price': 25000,
+			}
+		];
+		//chuyển đối tượng sang chuỗi JSON
+		products = JSON.stringify(products);
+
+		localStorage.setItem('products',products);
+
+		// //===============getItem( khóa): lấy từ Lưu trữ cục bộ==================
+		
+		// //lấy email
+		// let email_val = localStorage.getItem('email');
+		// console.log( 'email_val:' + email_val );
+
+		// //lấy phone
+		// let phone_val = localStorage.getItem('phone');
+		// console.log( 'phone_val:' + phone_val );
+
+		// //lấy user_1
+		// let user_1_val = localStorage.getItem('user_1');
+
+		// //chuyển chuỗi JSON sang đối tượng
+		// user_1_val = JSON.parse( user_1_val );
+		// console.log( 'user_1_val:');
+		// console.log(  user_1_val );
+
+		// //lấy cart
+		// let cart_val = localStorage.getItem('cart');
+		// cart_val = JSON.parse( cart_val );
+		// console.log( 'cart_val:');
+		// console.log(  cart_val );
+
+		// //lấy products
+		// let products_val = localStorage.getItem('products');
+		// products_val = JSON.parse( products_val );
+		// console.log( 'products_val:');
+		// console.log(  products_val );
+
+
+
+	</script>
+</body>
+</html>
